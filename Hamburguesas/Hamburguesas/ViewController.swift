@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //--- Init
-        setPais()
-        setHamburguesa()
-        setColor()
+        getPais()
+        getHamburguesa()
+        getColor()
         
     }
 
@@ -41,26 +41,26 @@ class ViewController: UIViewController {
     
     //--- IBActions
     @IBAction func btnQuieroHamburguesa() {
-        setPais()
-        setHamburguesa()
-        setColor()
+        getPais()
+        getHamburguesa()
+        getColor()
     }
     
     
     //--- Functions
-    func setPais() -> Void {
+    func getPais() -> Void {
         //--- Obteniendo el valor aleatorio de la Clase Pais
         let nombrePais = coleccionDePaises.obtenPais()
         //--- Asignando nombre del Pais aleatorio
         lblNombrePais.text = nombrePais
     }
-    func setHamburguesa() -> Void {
+    func getHamburguesa() -> Void {
         //--- Obteniendo el valor aleatorio de la Clase Hamburguesa
         let nombreHamburguesa = coleccionDeHamburguesas.obtenerHamburguesa()
         //--- Asignando nombre del Pais aleatorio
         lblHamburguesa.text = nombreHamburguesa
     }
-    func setColor() -> Void {
+    func getColor() -> Void {
         //--- Obteniendo el valor aleatorio de la Clase Color
         let nombreColor = coleccionDeColores.obtenerColor()
         //--- Asignando nombre del Color aleatorio
