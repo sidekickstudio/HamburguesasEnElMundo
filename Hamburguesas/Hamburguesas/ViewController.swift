@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     func getHamburguesa() -> Void {
         //--- Obteniendo el valor aleatorio de la Clase Hamburguesa
         let nombreHamburguesa = coleccionDeHamburguesas.obtenerHamburguesa()
-        //--- Asignando nombre del Pais aleatorio
+        //--- Asignando nombre de la Hamburguesa aleatoria
         lblHamburguesa.text = nombreHamburguesa
     }
     func getColor() -> Void {
